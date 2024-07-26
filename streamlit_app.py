@@ -22,7 +22,7 @@ def changeURL():
    st.session_state.download_URL = "http:"
 
 original_URL_text = st.text_input("Shared GDrive URL:")
-st.button("Plus one!", on_click=make_downloadable_GDrive_URL)
+st.button("Make new URL", on_click=make_downloadable_GDrive_URL)
 st.subheader("New URL")
 st.code(st.session_state.download_URL)
 
